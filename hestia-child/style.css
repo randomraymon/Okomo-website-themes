@@ -12,8 +12,35 @@ Template: hestia
 This theme, like WordPress, is licensed under the GPL.
 Use it to make something cool, have fun, and share what you've learned with others.
 */
-
 body {
-  background-color: blue;
- 
- }
+  background-color: yellow;
+  margin-top: calc(50px + 30px); }
+
+.menu {
+  width: 100vw;
+  height: 50px;
+  position: relative;
+  background: red; }
+  .menu__unter-menu {
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: green;
+    height: 100px;
+    position: absolute;
+    left: 50%;
+    -webkit-transform: translateX(-50%) rotate(30deg);
+            transform: translateX(-50%) rotate(30deg); }
+    .menu__unter-menu--closed {
+      opacity: 0.5; }
+    .menu__unter-menu li {
+      color: purple; }
+      .menu__unter-menu li:nth-of-type(1n) {
+        color: white; }
+      .menu__unter-menu li:hover {
+        -webkit-transform: scale(2);
+                transform: scale(2); }
+
+.columns {
+  background: pink;
+  height: 100px; }
