@@ -543,7 +543,7 @@ if ( ! function_exists( 'hestia_layout' ) ) {
 
 		$layout_class = 'main ';
 
-		$hestia_general_layout = get_theme_mod( 'hestia_general_layout', 1 );
+		$hestia_general_layout = get_theme_mod( 'hestia_general_layout', apply_filters( 'hestia_boxed_layout_default', 1 ) );
 
 		/**
 		 * Add main-raised class when the Boxed Layout option is enabled

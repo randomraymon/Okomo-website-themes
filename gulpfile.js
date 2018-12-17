@@ -20,11 +20,11 @@ const autoPrefixer = require('gulp-autoprefixer');
 //
 
 gulp.task('sass', function(){
-  gulp.src('./hestia-child/sass/style.scss')
+  gulp.src('./stratusx-child/sass/style.scss')
     .pipe(sass().on('error', sass.logError))
     .pipe(autoPrefixer())
     // .pipe(uglify())
-    .pipe(gulp.dest('./hestia-child/'));
+    .pipe(gulp.dest('./stratusx-child/'));
 });
 
 
@@ -35,6 +35,6 @@ gulp.task('sass', function(){
 gulp.task('default', ['sass']);
 
 gulp.task('watch', function(){
-  gulp.watch('./hestia-child/sass/**/*.scss', ['sass']);
-  gulp.watch('./hestia-child/sass/style.scss', ['sass']);
+  gulp.watch('./stratusx-child/sass/**/*.scss', ['sass']);
+  gulp.watch('./stratusx-child/sass/style.scss', ['sass']);
 })

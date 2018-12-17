@@ -1,0 +1,20 @@
+.page-template-team {
+ opacity: 0.4;
+
+  .test-div {
+    width: 200px;
+    height: 200px;
+    background: green;
+
+    &-div {
+      width: 50%;
+      height: 50%;
+      background: blue;
+    } 
+  }
+}
+
+.pace {
+  opacity: 0.8;
+}
+

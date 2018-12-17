@@ -285,6 +285,9 @@
 		 * Calculate height for .page-header on front page
 		 */
 		'headerSpacingFrontpage': function () {
+			if ( this.inIframe() && this.isMobileUA() ) {
+				return;
+			}
 			if ( $( '.home .carousel' ).length > 0 ) {
 				var pageHeader = $( '.page-header' ),
 					windowWidth = $( window ).width(),
@@ -292,9 +295,20 @@
 				if ( windowWidth > 768 ) {
 					pageHeader.css( 'min-height', (windowHeight * 0.9) ); // 90% of window height
 				} else {
-					pageHeader.css( 'min-height', (windowHeight) ); // 90% of window height
+					pageHeader.css( 'min-height', (windowHeight) );
 				}
 			}
+		},
+
+		'inIframe': function () {
+			if ( window.self !== window.top ) {
+				return true;
+			}
+			return false;
+		},
+
+		'isMobileUA': function () {
+			return navigator.userAgent.match( /(iPhone|iPod|iPad|Android|BlackBerry|BB10|mobi|tablet|opera mini|nexus 7)/i );
 		},
 
 		/**
@@ -444,7 +458,7 @@
 		 * Parallax on blog/archive/page header image
 		 */
 		'parallaxHeader': function () {
-			if( $('.elementor-location-header').length > 0 ) {
+			if ( $( '.elementor-location-header' ).length > 0 ) {
 				return;
 			}
 

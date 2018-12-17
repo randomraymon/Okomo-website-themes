@@ -431,9 +431,11 @@ class Hestia_About_Page {
 	 */
 	public function recommended_actions_completed() {
 
-		foreach ( $this->config['recommended_actions']['content'] as $recommended_action ) {
-			if ( ! $recommended_action['check'] ) {
-				return false;
+		if ( ! empty( $this->config['recommended_actions']['content'] ) ) {
+			foreach ( $this->config['recommended_actions']['content'] as $recommended_action ) {
+				if ( ! $recommended_action['check'] ) {
+					return false;
+				}
 			}
 		}
 

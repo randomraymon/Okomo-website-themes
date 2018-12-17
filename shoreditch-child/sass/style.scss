@@ -1,0 +1,24 @@
+/*
+Theme Name: Shoreditch-child
+Theme URI: https://wordpress.com/themes/shoreditch/
+Description: Okomo adaption of Shoreditch
+Author: Automattic
+Author URI: https://wordpress.com/themes/
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: shoreditch
+*/
+
+//
+// Base
+//
+
+@import '_base/_config';
+@import '_base/_mixins';
+@import '_base/_default';
+
+//
+// Modules
+//
+
+@import '_modules/_home';

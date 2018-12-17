@@ -87,7 +87,7 @@ class Hestia_Big_Title_Controls extends Hestia_Front_Page_Section_Controls_Abstr
 				'hestia_slider_type',
 				array(
 					'sanitize_callback' => 'hestia_sanitize_big_title_type',
-					'default'           => 'image',
+					'default'           => apply_filters( 'hestia_slider_type_default', 'image' ),
 				),
 				array(
 					'priority'    => -1,

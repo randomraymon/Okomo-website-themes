@@ -1,0 +1,28 @@
+/*
+Theme Name: hestia-child
+Theme URI: http://colorlib.com/wp/themes/illdy/
+Author: Colorlib
+Author URI: http://colorlib.com
+Description: Okomo adaption of Hestia
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Tags: blog, e-commerce, portfolio
+Text Domain: hestia
+Template: hestia
+This theme, like WordPress, is licensed under the GPL.
+Use it to make something cool, have fun, and share what you've learned with others.
+*/
+
+//
+// Base
+//
+
+@import '_base/_config';
+@import '_base/_mixins';
+@import '_base/_default';
+
+//
+// Modules
+//
+
+@import '_modules/_home';

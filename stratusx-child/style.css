@@ -1,0 +1,61 @@
+/*
+Theme Name:     Stratus - Child Theme
+Theme URI:      http://themovation.com/stratus
+Template:       stratusx
+Author:         Themovation
+Author URI:     http://themovation.com
+Version:        3.0
+Text Domain:    stratusx
+Domain Path:    /languages/
+*/
+
+
+/* = Theme customization starts here
+-------------------------------------------------------------- */
+
+
+.elementor-225 .elementor-element.elementor-element-9840877, .elementor-225 .elementor-element.elementor-element-9840877 > .elementor-background-overlay{
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+.elementor-225 .elementor-element.elementor-element-7daf5e3 {
+
+    margin-left: 20px;
+    margin-right: 20px;
+}
+
+li.menu-free-demo{
+    padding-top: 0px; 
+    padding-bottom: 0px;
+    line-height: 1.65;
+    border: solid 1px;
+    border-color: azure;
+    border-radius: 50px;
+    padding-left: 5px;
+    padding-right: 5px;
+    margin-left: 250px;
+}
+
+.elementor-177 .elementor-element.elementor-element-6d70c96 .elementor-image img {
+
+    position: relative;
+    transform: translate(+100px, -150px);
+    -ms-transform: translate(+100px, -150px);
+    -webkit-transform: translate(+100px, -150px);
+  
+}
+
+.elementor-177 .elementor-element.elementor-element-abd756b .elementor-image img{
+
+    position: relative;
+    transform: translate(-100px,+170px);
+    -ms-transform: translate(-100px,+170px);
+    -webkit-transform: translate(-100px,+170px);
+}
+
+.headhesive--clone #logo img{
+    height: 15px !important;
+    margin: 10px;
+}

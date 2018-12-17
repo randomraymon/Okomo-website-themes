@@ -64,6 +64,10 @@ class Hestia_About_Controls extends Hestia_Register_Customizer_Controls {
 	 * Add about section content editor control.
 	 */
 	private function add_content_control() {
+		if ( $this->should_display_content_editor() === false ) {
+			return;
+		}
+
 		$this->add_control(
 			new Hestia_Customizer_Control(
 				'hestia_page_editor',
@@ -73,11 +77,10 @@ class Hestia_About_Controls extends Hestia_Register_Customizer_Controls {
 					'transport'         => $this->selective_refresh,
 				),
 				array(
-					'label'           => esc_html__( 'About Content', 'hestia' ),
-					'section'         => 'hestia_about',
-					'priority'        => 10,
-					'needsync'        => true,
-					'active_callback' => array( $this, 'should_display_content_editor' ),
+					'label'    => esc_html__( 'About Content', 'hestia' ),
+					'section'  => 'hestia_about',
+					'priority' => 10,
+					'needsync' => true,
 				),
 				'Hestia_Page_Editor',
 				array(
@@ -93,6 +96,10 @@ class Hestia_About_Controls extends Hestia_Register_Customizer_Controls {
 	 * Add the page builder button control.
 	 */
 	private function add_pagebuilder_button_control() {
+		$edit_with_builder = hestia_edited_with_pagebuilder();
+		if ( $edit_with_builder === false ) {
+			return;
+		}
 		$this->add_control(
 			new Hestia_Customizer_Control(
 				'hestia_elementor_edit',

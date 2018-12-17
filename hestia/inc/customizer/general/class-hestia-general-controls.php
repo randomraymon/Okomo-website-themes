@@ -125,6 +125,7 @@ class Hestia_General_Controls extends Hestia_Register_Customizer_Controls {
 				'hestia_enable_scroll_to_top',
 				array(
 					'sanitize_callback' => 'hestia_sanitize_checkbox',
+					'default'           => apply_filters( 'hestia_scroll_to_top_default', 0 ),
 				),
 				array(
 					'label'    => esc_html__( 'Enable Scroll to Top', 'hestia' ),
@@ -144,7 +145,7 @@ class Hestia_General_Controls extends Hestia_Register_Customizer_Controls {
 			new Hestia_Customizer_Control(
 				'hestia_general_layout',
 				array(
-					'default'           => 1,
+					'default'           => apply_filters( 'hestia_boxed_layout_default', 1 ),
 					'sanitize_callback' => 'hestia_sanitize_checkbox',
 					'transport'         => 'postMessage',
 				),

@@ -16,9 +16,12 @@ class Hestia_Upsell_Manager extends Hestia_Register_Customizer_Controls {
 		$this->register_type( 'Hestia_Section_Upsell', 'section' );
 		$this->register_type( 'Hestia_Control_Upsell', 'control' );
 		$this->add_main_upsell();
-		$this->add_front_page_sections_upsells();
-		$this->add_typography_upsells();
-		$this->add_big_title_upsells();
+
+		if ( function_exists( 'hestia_check_passed_time' ) && hestia_check_passed_time( '21600' ) ) {
+			$this->add_front_page_sections_upsells();
+			$this->add_typography_upsells();
+			$this->add_big_title_upsells();
+		}
 	}
 
 	/**

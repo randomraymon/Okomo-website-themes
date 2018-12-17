@@ -260,7 +260,7 @@ class Hestia_Admin {
 				'deactivate_label' => esc_html__( 'Deactivate', 'hestia' ),
 				'content'          => array(
 					'themeisle-companion' => array(
-						'title'       => 'Orbit Fox Companion',
+						'title'       => 'OrbitFox by ThemeIsle',
 						'description' => __( 'It is highly recommended that you install the companion plugin to have access to the Frontpage features, Team and Testimonials sections.', 'hestia' ),
 						'check'       => defined( 'THEMEISLE_COMPANION_VERSION' ),
 						'plugin_slug' => 'themeisle-companion',

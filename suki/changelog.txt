@@ -1,0 +1,93 @@
+v0.6.1
+- NEW: WooCommerce cart's table responsive styles.
+- NEW: Make search form's placeholder text translatable from theme's text domain.
+- FIX: Customizer's shadow control JS bug.
+- FIX: Customizer's postmessage on button radius option for WooCommerce buttons.
+- FIX: Customizer's postmessage on subsidiary headings.
+- FIX: Custom CSS media queries order.
+- FIX: Custom CSS on WooCommerce buttons and inputs.
+- FIX: Some minor CSS.
+- TWEAK: Adjust narrow content and content wrapper allowed width ranges in Customizer.
+- TWEAK: Improve WooCommerce responsive cart table styles.
+
+v0.6.0
+- NEW: Header menu highlight now has highlight text color option.
+- TWEAK: Drastically improve Customizer performance (now it loads much faster).
+- TWEAK: Now section side padding is merged to "Padding" option (to avoid confusion).
+- FIX: Header sub-menu typography.
+- FIX: Customizer color control's autocomplete issue.
+- FIX: Customizer bugs.
+- FIX: Some CSS bugs.
+- FIX: Page header's default background on static pages.
+
+v0.5.5
+- TWEAK: Improve compatibility for Suki Pro.
+- FIX: Page header's background not using feature image on static pages.
+
+v0.5.4
+- NEW: Customizer's dimension control.
+- TWEAK: Improve default compatibility styles for Gutenberg.
+- TWEAK: Improve compatibility for Suki Pro.
+- TWEAK: Improve value range on all padding, border controls in Customizer.
+- TWEAK: Improve Suki admin page content and design.
+- FIX: Responsive settings on Customizer's Typography control.
+- FIX: "Hide post title" option (Page Settings) bug on static page.
+- REMOVE: Section side padding options on Customizer -- now is default in theme CSS.
+- REMOVE: Gutenberg options on Customizer -- now is default in theme CSS.
+
+v0.5.2
+- FIX: custom CSS bug on v0.5.1.
+
+v0.5.1
+- NEW: "Page header" option on Page Settings to enable / disable page header (replacing "Disable page header" option).
+- TWEAK: Improve all sanitization and escaping.
+- TWEAK: Improve some strings.
+- FIX: z-index on Content section overlapping Header bottom bar.
+- FIX: Mobile header submenu typography live preview on Customizer.
+- FIX: Page settings fallback values for Page header background image.
+- REMOVE: "Disable page header" option on Page Setting (in favor of the new "Page header" option).
+
+v0.5.0
+- NEW: Page Header background image mode on Customizer's Page Settings (replacing the old background options).
+- NEW: Gutenberg columns option in Customizer.
+- NEW: Option to hide featured image on page and post meta box.
+- TWEAK: Add proper `rel` attribute on social links -- credit to (luizbills)[https://github.com/luizbills] (#8)[https://github.com/sukiwp/suki/pull/8]
+- TWEAK: Move all Gutenberg compatibility features to a separate module.
+- TWEAK: Improve some strings.
+- TWEAK: Improve all sanitization and escaping.
+- TWEAK: Minor CSS.
+- REMOVE: Author social links features.
+- REMOVE: Built-in SVG upload feature (please use 3rd party plugin instead).
+- REMOVE: All "Page header background" options on Page Header.
+- REMOVE: "Override page header title" text option on Customizer's Page Settings.
+- REMOVE: "Override page header title" text option on Page Settings metabox.
+- REMOVE: All "Page header background" options on Customizer's Page Settings.
+- REMOVE: All "Page header background" options on Page Settings metabox.
+- REMOVE: "Show page title" option on Page Header settings (page title will always be displayed).
+
+v0.4.2
+- NEW: Global default options for "section layout" and "content & sidebar layout".
+- NEW: Version migration mechanism for future updates that require migration process.
+- NEW: Option to hide page title on static page meta box.
+- TWEAK: Some control & section structures on Customizer.
+- TWEAK: Some translatable strings on Customizer.
+- TWEAK: Mobile header drawer HTML structures.
+- TWEAK: Search results page when no results found.
+- FIX: Some CSS.
+- REMOVE: Ambiguous "keep content title displayed" option on Page Settings.
+
+v0.4.1
+- TWEAK: Some translatable strings on Customizer.
+- FIX: Blog posts page layout options not working.
+- FIX: Default CSS caused colors settings on headings, title, and small title not working.
+- FIX: Font family bugs on Small Title and Meta Info.
+- FIX: Some minor PHP warnings.
+
+v0.4.0
+- NEW: Option to merge header top bar, header bottom bar into header main bar.
+- NEW: Option to merge footer bottom bar into footer widgets bar.
+- TWEAK: Content wrapper is now rendered on header.php and footer.php and add new filter to disable it.
+- TWEAK: Change all ambiguous labels and terms on Customizer options to be more self-explanatory.
+
+v0.3.0
+- Release.

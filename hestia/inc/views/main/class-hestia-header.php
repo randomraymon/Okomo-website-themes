@@ -64,7 +64,7 @@ class Hestia_Header extends Hestia_Abstract_Main {
 	 * @return string
 	 */
 	private function get_nav_alignment_class() {
-		$header_alignment = get_theme_mod( 'hestia_header_alignment', 'left' );
+		$header_alignment = get_theme_mod( 'hestia_header_alignment', apply_filters( 'hestia_header_alignment_default', 'left' ) );
 		if ( ! empty( $header_alignment ) ) {
 			return ' hestia_' . $header_alignment;
 		}
@@ -118,7 +118,7 @@ class Hestia_Header extends Hestia_Abstract_Main {
 	 * Render the navigation bar Sidebar.
 	 */
 	private function navbar_sidebar() {
-		$header_alignment = get_theme_mod( 'hestia_header_alignment', 'left' );
+		$header_alignment = get_theme_mod( 'hestia_header_alignment', apply_filters( 'hestia_header_alignment_default', 'left' ) );
 
 		if ( $header_alignment !== 'right' ) {
 			return;

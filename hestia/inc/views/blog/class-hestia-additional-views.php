@@ -162,7 +162,7 @@ class Hestia_Additional_Views extends Hestia_Abstract_Main {
 	 * @since 1.1.54
 	 */
 	public function scroll_to_top() {
-		$hestia_enable_scroll_to_top = get_theme_mod( 'hestia_enable_scroll_to_top' );
+		$hestia_enable_scroll_to_top = get_theme_mod( 'hestia_enable_scroll_to_top', apply_filters( 'hestia_scroll_to_top_default', 0 ) );
 		if ( (bool) $hestia_enable_scroll_to_top === false ) {
 			return;
 		}

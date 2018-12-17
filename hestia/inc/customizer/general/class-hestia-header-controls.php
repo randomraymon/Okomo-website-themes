@@ -117,7 +117,7 @@ class Hestia_Header_Controls extends Hestia_Register_Customizer_Controls {
 			new Hestia_Customizer_Control(
 				'hestia_header_alignment',
 				array(
-					'default'           => 'left',
+					'default'           => apply_filters( 'hestia_header_alignment_default', 'left' ),
 					'sanitize_callback' => 'hestia_sanitize_alignment_options',
 				),
 				array(

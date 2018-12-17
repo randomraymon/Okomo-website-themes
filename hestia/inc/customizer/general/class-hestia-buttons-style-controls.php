@@ -65,14 +65,17 @@ class Hestia_Buttons_Style_Controls extends Hestia_Register_Customizer_Controls 
 				array(
 					'transport'         => 'postMessage',
 					'sanitize_callback' => 'hestia_sanitize_dimension',
-					'default'           => json_encode(
-						array(
-							'desktop' => json_encode(
-								array(
-									'desktop_vertical'   => 15,
-									'desktop_horizontal' => 33,
-								)
-							),
+					'default'           => apply_filters(
+						'hestia_button_padding_dimensions_default',
+						json_encode(
+							array(
+								'desktop' => json_encode(
+									array(
+										'desktop_vertical' => 15,
+										'desktop_horizontal' => 33,
+									)
+								),
+							)
 						)
 					),
 				),
@@ -98,7 +101,7 @@ class Hestia_Buttons_Style_Controls extends Hestia_Register_Customizer_Controls 
 				'hestia_buttons_border_radius',
 				array(
 					'sanitize_callback' => 'hestia_sanitize_range_value',
-					'default'           => 3,
+					'default'           => apply_filters( 'hestia_buttons_border_radius_default', 3 ),
 					'transport'         => 'postMessage',
 				),
 				array(

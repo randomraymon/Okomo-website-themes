@@ -1,0 +1,43 @@
+.menu {
+  width: 100vw;
+  height: $menu-height;
+  position: relative;
+  background: red;
+
+  &__unter-menu {
+
+    position: absolute;
+    right: 0;
+    top: 0;
+    background: green;
+    height: 100px;
+
+    @include center;
+
+
+    &--closed {
+      opacity: 0.5;
+    }
+
+    &__list {
+
+    }
+
+    li {
+      color: purple;
+
+      &:nth-of-type(1n) {
+        color: white;
+      }
+
+      &:hover {
+        transform: scale(2);
+      }
+    }
+  }
+}
+
+.columns {
+  background: pink;
+  height: 100px;
+}

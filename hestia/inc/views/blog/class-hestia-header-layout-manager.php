@@ -411,7 +411,7 @@ class Hestia_Header_Layout_Manager extends Hestia_Abstract_Main {
 	 * @return string
 	 */
 	private function boxed_page_layout_class() {
-		$layout = get_theme_mod( 'hestia_general_layout', 1 );
+		$layout = get_theme_mod( 'hestia_general_layout', apply_filters( 'hestia_boxed_layout_default', 1 ) );
 
 		if ( isset( $layout ) && true === (bool) $layout ) {
 			return 'boxed-layout-header';
