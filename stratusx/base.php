@@ -32,6 +32,11 @@ if ( function_exists( 'get_theme_mod' ) ) {
 
 <body <?php body_class(); ?>>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB5RWKN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <?php
 // Slider preloader enabled?
 if ( function_exists( 'get_theme_mod' ) ) {
@@ -91,6 +96,6 @@ global $themo_animation;
 
 <?php echo wp_kses_post($boxed_div_close); ?>
 
-<script data-pw-id="okomo-script" type="text/javascript" src="https://okomo-service.azurewebsites.net/okomo/3443d92f-984f-4512-aaea-abb43d120402"></script>
+<script type="text/javascript" src="https://okomo-service.azurewebsites.net/okomo/3443d92f-984f-4512-aaea-abb43d120402"></script>
 </body>
 </html>
