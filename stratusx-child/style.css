@@ -38,24 +38,53 @@ li.menu-free-demo{
     margin-left: 250px;
 }
 
-.elementor-177 .elementor-element.elementor-element-6d70c96 .elementor-image img {
+@media only screen and (min-width: 768px) {
+    /* tablets and desktop */
 
-    position: relative;
-    transform: translate(+100px, -150px);
-    -ms-transform: translate(+100px, -150px);
-    -webkit-transform: translate(+100px, -150px);
-  
+
+    .elementor-177 .elementor-element.elementor-element-6d70c96 .elementor-image img {
+
+        position: relative;
+        transform: translate(+0px, -150px);
+        -ms-transform: translate(+0px, -150px);
+        -webkit-transform: translate(+0px, -150px);
+    
+    }
+
 }
 
-.elementor-177 .elementor-element.elementor-element-abd756b .elementor-image img{
+@media only screen and (max-width: 767px) {
+    /* phones */
+
+    .elementor-177 .elementor-element.elementor-element-6d70c96 .elementor-image img {
+
+        position: relative;
+        transform: translate(+30px, -100px);
+        -ms-transform: translate(+30px, -100px);
+        -webkit-transform: translate(+30px, -100px);
+      
+    }    
+
+
+
+}
+
+/* .elementor-177 .elementor-element.elementor-element-abd756b .elementor-image img{
 
     position: relative;
     transform: translate(-100px,+170px);
     -ms-transform: translate(-100px,+170px);
     -webkit-transform: translate(-100px,+170px);
-}
+} */
 
 .headhesive--clone #logo img{
     height: 15px !important;
     margin: 10px;
 }
+
+#scrollUp{
+    display: none !important;
+}
+
+
+
