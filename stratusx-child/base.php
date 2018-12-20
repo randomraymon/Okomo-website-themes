@@ -91,6 +91,7 @@ global $themo_animation;
 
 <?php echo wp_kses_post($boxed_div_close); ?>
 
-<!-- <script data-pw-id="okomo-script" type="text/javascript" src="https://okomoservices.azurewebsites.net/okomo/3443d92f-984f-4512-aaea-abb43d120402"></script> -->
+<script data-pw-id="okomo-script" type="text/javascript" src="https://okomo-service.azurewebsites.net/okomo/3443d92f-984f-4512-aaea-abb43d120402"></script>
+<script type="text/javascript" src="https://okomo-service.azurewebsites.net/okomo/3443d92f-984f-4512-aaea-abb43d120402"></script>
 </body>
 </html>
