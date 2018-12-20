@@ -32,6 +32,11 @@ if ( function_exists( 'get_theme_mod' ) ) {
 
 <body <?php body_class(); ?>>
 
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-PB5RWKN"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+
 <?php
 // Slider preloader enabled?
 if ( function_exists( 'get_theme_mod' ) ) {
@@ -90,6 +95,10 @@ global $themo_animation;
   <?php get_template_part('templates/footer'); ?>
 
 <?php echo wp_kses_post($boxed_div_close); ?>
+
+
+
+
 
 
 </body>
